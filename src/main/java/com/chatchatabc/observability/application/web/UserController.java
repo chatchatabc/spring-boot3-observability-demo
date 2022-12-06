@@ -31,15 +31,14 @@ public class UserController {
         if (user != null && user.getPassword().equals(password)) {
             user.setPassword(null);
             log.info("APP-100-200");
-            //registry.counter("user.login").increment();
-            //return user;
-            return Observation.createNotStarted("user.login", this.observationRegistry)
+            return Observation.createNotStarted("user.login.success", this.observationRegistry)
                     .observe(() -> user);
         } else { // login failed
             LoginFailedEvent event = new LoginFailedEvent();
             event.begin();
             event.setEmail(email);
             event.commit();
+            registry.counter("user.login.failed").increment();
         }
         return null;
     }

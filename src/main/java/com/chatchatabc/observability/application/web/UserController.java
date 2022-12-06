@@ -8,6 +8,8 @@ import com.chatchatabc.observability.utils.errors.AppErrorCodeLoggerFactory;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.observation.Observation;
 import io.micrometer.observation.ObservationRegistry;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.WebRequest;
@@ -16,6 +18,7 @@ import org.springframework.web.context.request.WebRequest;
 @RequestMapping("/user")
 public class UserController {
     private static final AppErrorCodeLogger log = AppErrorCodeLoggerFactory.getLogger(UserController.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
     @Autowired
     private MeterRegistry registry;
@@ -31,6 +34,7 @@ public class UserController {
         if (user != null && user.getPassword().equals(password)) {
             user.setPassword(null);
             log.info("APP-100-200");
+            //logger.info("Succeed to login");
             return Observation.createNotStarted("user.login.success", this.observationRegistry)
                     .observe(() -> user);
         } else { // login failed
@@ -39,6 +43,8 @@ public class UserController {
             event.setEmail(email);
             event.commit();
             registry.counter("user.login.failed").increment();
+            log.error("APP-100-400", email);
+            //logger.info("Failed to login");
         }
         return null;
     }

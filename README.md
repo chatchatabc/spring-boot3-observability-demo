@@ -3,10 +3,10 @@ Spring Boot 3 Observability demo
 
 # Observability
 
-* Logging
-* Metrics
-* Tracing
-* Events
+* Logging: slf4j, log4j, elastic search
+* Metrics: Grafana Metrics Dashboard
+* Tracing: ZipKin
+* Events: JRF, Kafka Topic
 
 # Logging
 

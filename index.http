@@ -6,3 +6,6 @@ email=lierin_waddlemlz%40robots.rzc&password=1234567
 
 ### metrics
 GET http://localhost:8080/actuator/metrics/user.login
+
+### prometheus
+GET http://localhost:8080/actuator/prometheus

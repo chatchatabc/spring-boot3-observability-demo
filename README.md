@@ -26,6 +26,15 @@ Spring Boot 3 Observability demo
 
 * JFR Explorer: https://www.chriswhocodes.com/jfr_jdk19.html
 
+# Prometheus and Grafana Setup
+
+Please modify `data/prometheus/prometheus.yml` to update Spring Boot IP Address.
+
+Then execute `docker-compose up -d` to start Prometheus and Grafana.
+
+* Prometheus: http://localhost:9090
+* Grafana: http://localhost:3000
+
 # References
 
 * Observability with Spring Boot 3: https://spring.io/blog/2022/10/12/observability-with-spring-boot-3
@@ -33,3 +42,4 @@ Spring Boot 3 Observability demo
 * Micrometer: https://micrometer.io/
 * Spring Metrics: https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.metrics
 * Java Flight Recorder: https://docs.oracle.com/en/java/java-components/jdk-mission-control/8/user-guide/using-jdk-flight-recorder.html
+* Monitoring Spring Boot Application with Prometheus and Grafana: https://refactorfirst.com/spring-boot-prometheus-grafana

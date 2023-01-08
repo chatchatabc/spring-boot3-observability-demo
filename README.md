@@ -36,7 +36,8 @@ Then execute `docker-compose up -d` to start Prometheus and Grafana.
 * Grafana: http://localhost:3000
 
 # References
-
+               
+* Observability with Spring Boot 3: https://www.baeldung.com/spring-boot-3-observability
 * Observability with Spring Boot 3: https://spring.io/blog/2022/10/12/observability-with-spring-boot-3
 * What Is Observability? https://tanzu.vmware.com/developer/tv/enlightning/10/
 * Micrometer: https://micrometer.io/

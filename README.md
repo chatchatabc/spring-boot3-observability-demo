@@ -22,6 +22,8 @@ Spring Boot 3 Observability demo
 
 # Tracing
 
+Please refer [Tracing in Spring Boot 3 WebFlux](https://betterprogramming.pub/tracing-in-spring-boot-3-webflux-d432d0c78d3e)
+
 # Events
 
 * JFR Explorer: https://www.chriswhocodes.com/jfr_jdk19.html

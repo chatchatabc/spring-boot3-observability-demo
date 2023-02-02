@@ -47,3 +47,4 @@ Then execute `docker-compose up -d` to start Prometheus and Grafana.
 * Java Flight Recorder: https://docs.oracle.com/en/java/java-components/jdk-mission-control/8/user-guide/using-jdk-flight-recorder.html
 * Monitoring Spring Boot Application with Prometheus and Grafana: https://refactorfirst.com/spring-boot-prometheus-grafana
 * Set up and observe a Spring Boot application with Grafana Cloud, Prometheus, and OpenTelemetry: https://grafana.com/blog/2022/04/26/set-up-and-observe-a-spring-boot-application-with-grafana-cloud-prometheus-and-opentelemetry/
+* Spring Boot Logback and Log4j2 Extensions: https://www.baeldung.com/spring-boot-logback-log4j2

@@ -48,3 +48,4 @@ Then execute `docker-compose up -d` to start Prometheus and Grafana.
 * Monitoring Spring Boot Application with Prometheus and Grafana: https://refactorfirst.com/spring-boot-prometheus-grafana
 * Set up and observe a Spring Boot application with Grafana Cloud, Prometheus, and OpenTelemetry: https://grafana.com/blog/2022/04/26/set-up-and-observe-a-spring-boot-application-with-grafana-cloud-prometheus-and-opentelemetry/
 * Spring Boot Logback and Log4j2 Extensions: https://www.baeldung.com/spring-boot-logback-log4j2
+* Spring Boot 3 Observability: monitor Application on the method level - https://medium.com/spring-boot/spring-boot-3-observability-monitor-application-on-the-method-level-8057abec5926
